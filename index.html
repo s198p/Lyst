@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/lyst/footer.css">
+    <link rel="stylesheet" href="/lyst/header.css">
+    <style>
+        #mainimg>img{
+            width:100%;
+            border-top:1px solid black;
+            border-bottom:1px solid black;
+        }
+        #slide1{
+            display:flex;
+            overflow-x: auto;
+            border-top:1px solid black;
+            border-bottom:1px solid black;
+        }
+        #slide1>div>img{
+            height:400px;
+            width:400px
+        }
+        #slide2{
+            display:flex;
+            overflow: auto;
+        }
+        #slide2>div>img{
+            height:400px;
+            width:300
+        }
+.outer{
+  writing-mode: tb-rl;
+}
+.inner{
+  transform: rotate(180deg);
+  transition: transform 1s ease-in-out;
+  padding:.5rem;
+  height:300px;
+  background-color:white;
+  font-weight:bold;
+  font-size: 22px;
+
+}
+.inner:hover{
+    color:#5763ee;
+}
+
+#slide3{    
+    display:flex;
+    gap:30px;
+    overflow-x: auto;
+    border-top:1px solid black;
+    border-bottom:1px solid black;
+}
+#slide3>div>img{
+    height:350px;
+    width:350px;
+}
+#slide3>div>p{
+    font-size:20px;
+}
+#slide3>div{
+    border:1px solid black;
+}
+#slide3>div:nth-child(1){
+    background-color: #f5f4f2;
+}
+#slide4{
+    display:flex;
+    gap:30px;
+    overflow-x: auto;
+    border-top:1px solid black;
+    border-bottom:1px solid black;
+}
+#slide4>div>img{
+    height:350px;
+    width:350px;
+}
+#slide4>div>p{
+    font-size:20px;
+}
+#slide4>div:nth-child(3){
+    background-color: #f5f4f2;
+}
+#slide4>div{
+    border:1px solid black;
+}
+#slide5{
+    display:flex;
+    gap:30px;
+    overflow-x: auto;
+    border-top:1px solid black;
+    border-bottom:1px solid black;
+}
+#slide5>div>img{
+    height:350px;
+    width:350px;
+}
+#slide5>div>p{
+    font-size:20px;
+}
+#slide5>div:nth-child(2){
+    background-color:#f5f4f2;
+}
+#slide5>div{
+    border:1px solid black;
+}
+#slide6{
+    display:flex;
+    border-top:1px solid black;
+    border-bottom:1px solid black;
+}
+#slide6-1{
+    display:flex;
+    background-color: #f5f4f2;
+    gap:40px;
+    padding-right:20px;
+}
+#slide6-2{
+    background-color: #cafc4f;
+    
+}
+#slide6-2:hover{
+    background-color: #4294f2;
+}
+#slide6-2>p{
+    margin-top:200px;
+    padding-left:30px;
+}
+#slide6-2>p:nth-child(1){
+    font-size:40px;
+}
+#slide6-2>p:nth-child(2){
+    background-color:black;
+    color:white;
+    width:100px;
+    font-size: 28px;
+    margin-top:-30px;
+}
+#slide7{
+    display:flex;
+    border-top:1px solid black;
+    border-bottom:1px solid black;
+}
+#slide7-1{
+    display:flex;
+    gap:20px;
+}
+
+#slide7>div>p{
+    font-size:32px;
+    font-weight: bold;
+}
+#slide7-1>div>p{
+    margin-top:85px;
+    font-size:26px;
+}
+#slide7-1>div>p:hover{
+    color:#5763ee;
+}
+#slide8{
+    display:flex;
+    justify-content:space-around;
+}
+
+.slide8-1{
+    display:flex;
+    font-size:14px;
+}
+.slide8-1>div:nth-child(2){
+    margin-top: 60px;
+}
+.slide8-1>div:nth-child(2)>p:hover{
+    text-decoration: underline;
+}
+h1{
+    font-size:52px;
+    padding:50px;
+}
+.font100{
+    font-size: 100px;
+}
+.font32{
+    font-size:32px;
+}
+.font14{
+    font-size:16px;
+}
+
+
+    </style>
+</head>
+<body>
+ <!-------------------------------------------------------navbar---------------------------------------------------------------->
+ <div id="headerBody">
+    <div id="upperHeader">
+        <p>In-Us$</p>
+        <p>Help <i class="arrow down"></i></p>
+        <a href="login.html"><p>Sign in</p></a>
+        <a href="signup.html"><p>Join</p></a>
+    </div>
+    <div id="lowerHeader">
+        <div>
+        <p class="lh">LYST</p>
+        <a href="women.html"><p class="lh" onclick="women()">WOMEN</p></a>
+        <a href="mens.html"><p class="lh">MEN</p></a>
+        
+        </div>
+        
+        <form action="/" method="GET" class="form">
+            <input type="search" placeholder="SEARCH (E.G. 'ACNE JEANS')" class="search-field" />
+            <button type="submit" class="search-button">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpabrqKMMTuZuYL3aIGA1xHJ0cfdY5xjY8Gg&usqp=CAU">
+    </div>
+
+</div>
+    <!-------------------------------------------------------navbar---------------------------------------------------------------->
+    <div>
+        <div id="mainimg">
+            <img src="https://cdna.lystit.com/cms/ENG_header_XL_9f9e2af236_615828663f.jpg"/>
+        </div>
+        <div>
+            <div id="slide1">
+                <div class="outer">
+                    
+                    <img src="https://cdna.lystit.com/480/480/r/cms/52bc695e_08be_4ee0_a2c5_83613810f6af_66c0a976c6.png" />
+                    <p class="inner">CRISP MONOCHROME</p>
+                </div>
+                <div class="outer">
+                    
+                    <img src="https://cdna.lystit.com/480/480/r/cms/9d9a6135_1ac2_4f52_8571_c4583b71935a_1aaa201f09.png" />
+                    <p class="inner">ONE STEP AHEAD</p>
+                </div>
+                <div class="outer">
+                    
+                    <img src="https://cdna.lystit.com/480/480/r/cms/88a1e35a_0c3f_47af_b52b_ac54ba760a7d_96ba97a25c.png" />
+                    <p class="inner">REFINED GLAMOUR</p>
+                </div>
+                <div class="outer">
+                    
+                    <img src="https://cdna.lystit.com/480/480/r/cms/29c1b959_a587_4e48_af7a_8f2ec92e5fe5_498ea0af57.png" />
+                    <p class="inner">NEW CLASSICS</p>
+                </div>
+                <div class="outer">
+                    
+                    <img src="https://cdna.lystit.com/480/480/r/cms/140d58b8_1b05_4e12_9507_ef4472b2bf4e_720f872481.png" />
+                    <p class="inner">30 UNDER 300</p>
+                </div>
+            </div>
+            <div id="slide2">
+                <div class="outer">
+                    
+                    <img src="https://cdna.lystit.com/cms/JPG_SS_22_RTW_TOP_THE_ATTICO_PANTS_DOLCE_and_GABBANA_BAG_PRADA_WOMAN_1_8a2611b9e1.jpg" />
+                    <p class="inner">ITALYST:SHOP DESIGNER BRANDS & SAVE UPTO 70%*</p>
+                </div>
+                <div class="outer">
+                    
+                    <img src="https://cdna.lystit.com/cms/EA_My_EA_Bags_HP_Top_Lyst_3ab19a30d3.jpg" />
+                    <p class="inner">DISCOVER-THE ICONIC MYEA BAG-EMPERIO ARMANI  </p>
+                </div>
+                <div class="outer">
+                    
+                    <img src="https://cdna.lystit.com/cms/LINA_BAG_ASSET_600x600_01800ffbe1.jpg" />
+                    <p class="inner">MICHEAL CORSE:YOUR FAVOURITE STYLES ARE WAITING & ON SALE</p>
+                </div>
+                <div class="outer">
+                    
+                    <img src="https://cdna.lystit.com/cms/600x600_HP_TOP_LYST_03befce6d4.png" />
+                    <p class="inner">THE MULBERRY SOFTIE-A BAG MADE TO BE SQUEEZED</p>
+                </div>
+                <div class="outer">
+                    
+                    <img src="https://cdna.lystit.com/cms/600x600_HP_TOP_LYST_03befce6d4.png" />
+                    <p class="inner">ENJOY 30% OFF ON SELECTED MUST HAVE PIECES ON 24S</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="slide3">
+                <div>
+                    <h1>BREAKOUT BRANDS</h1>
+                </div>
+                <div>
+                    <p>PATOU</p>
+                    <img src="https://cdna.lystit.com/cms/My_Post_81_76121ffa01.jpg"/>
+                </div>
+                <div>
+                    <p>GUCCI</p>
+                    <img src="https://cdna.lystit.com/cms/designer_rail_gucci_eca9e74796.jpg"/>
+                </div>
+                <div>
+                    <p>SAINT LAURENT</p>
+                    <img src="https://cdna.lystit.com/cms/designer_rail_saint_laurent_2031eb80f7.jpeg"/>
+                </div>
+                <div>
+                    <p>OFF WHITE C/O VIRGIL ABLOH</p>
+                    <img src="https://cdna.lystit.com/cms/designer_rail_off_white_co_virgil_abloh_d8c6b37a9f.jpeg"/>
+                </div>
+                <div>
+                    <p>BALENCIAGA</p>
+                    <img src="https://cdna.lystit.com/cms/designer_rail_balenciaga_215cbc0fe0.jpeg"/>
+                </div>
+                <div>
+                    <p>NIKE</p>
+                    <img src="https://cdna.lystit.com/cms/designer_rail_nike_c3045162ba.png"/>
+                </div>
+                <div>
+                    <p>DOLCE & GABBANA</p>
+                    <img src="https://cdna.lystit.com/cms/designer_rail_dolce_gabbana_bcb7049bb0.jpeg"/>
+                </div>
+                <div>
+                    <p>MONCLER</p>
+                    <img src="https://cdna.lystit.com/cms/designer_rail_moncler_bcdcdc131d.jpeg"/>
+                </div>
+                <div>
+                    <p>VALENTINO</p>
+                    <img src="https://cdna.lystit.com/cms/designer_rail_valentino_421c18fab0.jpeg"/>
+                </div>
+            </div>
+            <div id="slide4">
+                <div>
+                    <p>BALENCIAGA EARRINGS</p>
+                    <img src="https://cdna.lystit.com/cms/balenciaga_earrings_28c5ac2ab9.jpeg"/>
+                </div>
+                <div>
+                    <p>SIMONE ROCHA EARRINGS</p>
+                    <img src="https://cdna.lystit.com/cms/simone_rocha_earrings_d997cb6315.jpeg"/>
+                </div>
+                <div>
+                    <h1>TRENDING NOW</h1>
+                </div>
+                <div>
+                    <p>OFF WHITE C/O VIRGIL ABLOH SANDLES</p>
+                    <img src="https://cdna.lystit.com/cms/mens_off_white_co_virgil_abloh_sandals_5c477cbb4a.jpeg"/>
+                </div>
+                <div>
+                    <p>AMIRI JEANS</p>
+                    <img src="https://cdna.lystit.com/cms/mens_amiri_jeans_98aeae1fcc.jpeg"/>
+                </div>
+                <div>
+                    <p>FENDI JUMPSUITS</p>
+                    <img src="https://cdna.lystit.com/cms/designer_category_fendi_jumpsuits_9f9ac55f4f.jpeg"/>
+                </div>
+                <div>
+                    <p>GUCCI SUITS</p>
+                    <img src="https://cdna.lystit.com/cms/mens_gucci_suits_af6c650ce2.jpeg"/>
+                </div>
+            </div>
+            <div id="slide5">
+                <div>
+                    <p>BALENCIAGA SHIRTS</p>
+                    <img src="https://cdna.lystit.com/cms/designer_category_mens_balenciaga_t_shirts_2c33757129.jpeg"/>
+                </div>
+                <div>
+                    <h1>HOT RIGHT NOW</h1>
+                </div>
+                <div>
+                    <p>CANALI COATS</p>
+                    <img src="https://cdna.lystit.com/cms/designer_category_mens_canali_coats_fcd56d8791.jpeg"/>
+                </div>
+                <div>
+                    <p>CAMILLA DRESSES</p>
+                    <img src="https://cdna.lystit.com/cms/designer_category_camilla_dresses_ed5dbcc2dc.jpeg"/>
+                </div>
+                <div>
+                    <p>CHANNEL SHOULDER BAGS</p>
+                    <img src="https://cdna.lystit.com/cms/designer_category_chanel_shoulder_bags_969f71f141.jpeg"/>
+                </div>
+                <div>
+                    <p>BALENCIAGA SHOULDER BAGS</p>
+                    <img src="https://cdna.lystit.com/cms/balenciaga_shoulder_bags_3febdd5725.jpeg"/>
+                </div>
+                <div>
+                    <p>GIORGIO ARMANI SUNGLASSES</p>
+                    <img src="https://cdna.lystit.com/cms/designer_category_mens_giorgio_armani_sunglasses_80768d4fe9.jpeg"/>
+                </div>
+            </div>
+        </div>
+        <div id="slide6">
+            <div id="slide6-1">
+                <div>
+                    <p class="font100">1</p>
+                    <p class="font32">THE BIGGEST SELECTION</p>
+                    <p class="font14">Shop over 12,000 brands and stores in one place.</p>
+                    <p class="font14">Find exactly what you want with powerful search and personal recommendations.</p>
+                </div>
+                <div>
+                    <p class="font100">2</p>
+                    <p class="font32">THE HOTTEST PRODUCTS</p>
+                    <p class="font14">See whats new and whats trending.</p>
+                    <p class="font14">Hit the heart to receive alerts on the latest drops from your favourite brands.</p>
+                </div>
+                <div>
+                    <p class="font100">3</p>
+                    <p class="font32">THE BEST PRICES</p>
+                    <p class="font14">Compare prices and shipping options across thousands of stores.</p>
+                    <p class="font14">Lyst members are notified when an item goes on sale.</p>
+                </div>
+            </div>
+            <div id="slide6-2">
+                <p>SIGNUP FOR SMARTER SHOPPING</p>
+                <p>JOIN &#8594</p>
+            </div>
+        </div>
+        <div id="slide7">
+            <div class="outer">
+                <p class="inner">MOST WANTED</p>
+            </div>
+            <div id="slide7-1">
+                <div>
+                    <p>TUXEDO DRESSES</p>
+                    <p>NIKE SB DUNK SNEAKERS</p>
+                </div>
+                <div>
+                    <p>Dr.MARTENS 1461 SHOES</p>
+                    <p>BUCKET HATS</p>
+                </div>
+                <div>
+                    <p>BIRKENSTOCK PAPILLIO SANDLES</p>
+                    <p>NIKE METCON SNEAKERS</p>
+                </div>
+                <div>
+                    <p>SCALLOPED BIKINI BOTTOMS</p>
+                    <p>NIKE AIR MAX1 PREMIUM SNEAKERS</p>
+                </div>
+                <div>
+                    <p>TORY BURCH MILLER SANDLES</p>
+                    <p>KIMONO JACKETS</p>
+                </div>
+            </div>
+        </div>
+        <div id="slide8">
+            <div class="slide8-1">
+                <div class="outer">
+                    <p class="inner">WOMEN'S CLOTHING</p>
+                </div>
+                <div>
+                    <p>Activewear</p>
+                    <p>Coats</p>
+                    <p>Tops</p>
+                    <p>Dresses</p>
+                    <p>Beachwear</p>
+                    <p>Nightwear</p>
+                    <p>Jackets</p>
+                    <p>Hoisery</p>
+                </div>
+            </div>
+            <div class="slide8-1">
+                <div class="outer">
+                    <p class="inner">MEN'S CLOTHING</p>
+                </div>
+                <div>
+                    <p>Activewear</p>
+                    <p>Coats</p>
+                    <p>Beachwear</p>
+                    <p>Nightwear</p>
+                    <p>Jackets</p>
+                    <p>Sweaters</p>
+                    <p>Shirts</p>
+                    <p>Suits</p>
+                </div>
+            </div>
+            <div class="slide8-1">
+                <div class="outer">
+                    <p class="inner">WOMEN'S SHOES</p>
+                </div>
+                <div>
+                    <p>Heels</p>
+                    <p>Flats</p>
+                    <p>Sneakers</p>
+                    <p>Shoes</p>
+                    <p>Slip-ons</p>
+                    <p>Sneakers</p>
+                    <p>Sandals</p>
+                    <p>Laceups</p>
+                </div>
+            </div>
+            <div class="slide8-1">
+                <div class="outer">
+                    <p class="inner">MEN'S SHOES</p>
+                </div>
+                <div>
+                    <p>Sneakers</p>
+                    <p>Sandals</p>
+                    <p>Laceups</p>
+                    <p>Boots</p>
+                    <p>Heels</p>
+                    <p>Flats</p>
+                    <p>Sneakers</p>
+                    <p>Shoes</p>
+                </div>
+            </div>
+            <div class="slide8-1">
+                <div class="outer">
+                    <p class="inner">WOMEN'S ACCESORIES</p>
+                </div>
+                <div>
+                    <p>Cases</p>
+                    <p>Watches</p>
+                    <p>Hair</p>
+                    <p>Belts</p>
+                    <p>Facemasks</p>
+                    <p>Umbrellas</p>
+                    <p>Wallet</p>
+                    <p>Sunglasses</p>
+                </div>
+            </div>
+            <div class="slide8-1">
+                <div class="outer">
+                    <p class="inner">MEN'S ACCESORIES</p>
+                </div>
+                <div>
+                    <p>Watches</p>
+                    <p>Belts</p>
+                    <p>Face Masks</p>
+                    <p>Wallets</p>
+                    <p>Sunglasses</p>
+                    <p>Gloves</p>
+                    <p>Scarves</p>
+                    <p>Hats</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script href="./filter.js">
+</script>

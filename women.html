@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/lyst/footer.css">
+    <link rel="stylesheet" href="/lyst/header.css">
+    <style>
+        .font32{
+            font-size: 32px;
+        }
+        #m1{
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            background-color:#f5f4f2
+        }
+        #m2{
+            display:flex;
+            padding:0px 100px 0px 100px;
+        }
+        #m1Filter{
+            line-height: 10px;
+            height:auto;
+            width:20%;
+        }
+        #m1Filter>div{
+            margin-top:10px
+        }
+        #m1Products{
+            
+            height:auto;
+            width:80%;
+        }
+        #m1Filter {
+        width: 226px;
+        height: 1500px;
+        border-left:none ;
+        }
+        #filter input{
+            width: 15px;
+            height: 15px;
+            margin-right: 12px;
+        }
+        label{
+            display: flex;
+            align-items: center;
+            margin-top: 8px;
+        }
+        #filter>div {
+            display: grid;
+            width: 88%;
+            padding: 20px 0px 15px 25px;
+            border-bottom: 1px solid #e9e9ed;
+            border-right:#e9e9ed solid 1px;
+        }
+        #m1Products{
+            display:grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: auto;
+            text-align: center;
+            line-height:5px
+        }
+        .priceDiv{
+            display: flex;
+            justify-content: center;
+            gap:30px;
+        }
+        .maindiv{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!-------------------------------------------------------navbar---------------------------------------------------------------->
+ <div id="headerBody">
+    <div id="upperHeader">
+        <p>In-Us$</p>
+        <p>Help <i class="arrow down"></i></p>
+        <a href="login.html"><p>Sign in</p></a>
+        <a href="signup.html"><p>Join</p></a>
+    </div>
+    <div id="lowerHeader">
+        <div>
+        <p class="lh">LYST</p>
+        <a href="women.html"><p class="lh" onclick="women()">WOMEN</p></a>
+        <a href="mens.html"><p class="lh">MEN</p></a>
+        
+        </div>
+        
+        <form action="/" method="GET" class="form">
+            <input type="search" placeholder="SEARCH (E.G. 'ACNE JEANS')" class="search-field" />
+            <button type="submit" class="search-button">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpabrqKMMTuZuYL3aIGA1xHJ0cfdY5xjY8Gg&usqp=CAU">
+    </div>
+
+</div>
+    <!-------------------------------------------------------navbar---------------------------------------------------------------->
+    <div id="mensBody">
+        <div id="m1">
+            <p class="font32">WOMEN'S CLOTHING</p>
+        </div>
+        <div id="m2">
+            <div id="m1Filter">
+                <div id="gender">
+                    <h2>Filters</h2>
+                    <div><b>Gender</b></div>
+                    <div>
+                        <label><input  onchange="men()" id="men" type="checkbox" value="Men"/>Men's</label>
+                        <label><input  onchange="women()" id="women" type="checkbox" value="Women"/>Women's</label>
+                    </div>
+                </div>
+                <div id="category">
+                    <div><b>Category</b></div>
+                    <div>
+                        <label><input  onchange="pants()" id="pants" type="checkbox" value="pants"/>Pants</label>
+                        <label><input  onchange="sweaters()" id="sweaters" type="checkbox" value="Sweaters"/>Sweaters</label>
+                        <label><input  onchange="jackets()" id="jackets" type="checkbox" value="jackets"/>Jackets</label>
+                        <label><input  onchange="tshirts()" id="tshirts" type="checkbox" value="tshirts"/>T-Shirts</label>
+                    </div>
+                </div>
+                <div id="brands">
+                    <div><b>Brands</b></div>
+                    <div>
+                        <label><input onchange="brunellocucinelli()" id="brunello cucinelli" type="checkbox" value="brunello cucinelli  "/>BRUNELLO CUCINELLI</label>
+                        <label><input onchange="moncler()" id="moncler" type="checkbox" value="moncler"/>MONCLER</label>
+                    </div>
+                </div>
+                <div id="stores">
+                    <div><b>Stores</b></div>
+                    <div>
+                        <label><input onchange="sacksoff5th()" id="sacksoff5th" type="checkbox" value="sacksoff5th  "/>Sacks OFF 5TH</label>
+                        <label><input onchange="mytheresa()" id="mytheresa" type="checkbox" value="mytheresa"/>Mytheresa</label>
+                        <label><input onchange="cettire()" id="cettire" type="checkbox" value="cettire"/>Cettire</label>
+                        <label><input onchange="theoutnet()" id="theoutnet" type="checkbox" value="theoutnet"/>The Outnet.com</label>
+                    </div>
+                </div>
+                <div id="price">
+                    <div><b>Price</b></div>
+                    <div>
+                        <label> <input onchange="$100to$200()" id="$100to$200" type="checkbox" value="$100to$200"/>$100 - $200 </label>
+                        <label> <input onchange="$200to$500()" id="$200to$500" type="checkbox" value="$200to$500"/>$200 - $500</label>
+                        <label> <input onchange="$500to$1000()" id="$500to$1000" type="checkbox" value="$500to$1000"/>$500 - $1000</label>
+                        <label> <input onchange="$1000above()" id="$1000above" type="checkbox" value="$1000above"/>$1000 and above</label>
+                        
+                    </div>
+                </div>
+                <div id="color">
+                    <div><b>Color</b></div>
+                    <div>
+                        <label> <input onchange="black()" id="black"  type="checkbox" value="black"/>Black</label>
+                        <label> <input onchange="offwhite()" id="offwhite" type="checkbox" value="navyblue"/>Offwhite</label>
+                        <label> <input onchange="white()" id="white" type="checkbox" value="white"/>White</label>
+                    </div>
+                </div>
+            </div>
+            <div id="m1Products"></div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="./women.js"></script>
+<script src="./filter.js"></script>
