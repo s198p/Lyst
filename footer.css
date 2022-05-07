@@ -1,0 +1,49 @@
+#footerBody{
+    display:flex;
+    justify-content: space-around;
+    padding:50px 250px 0px 250px;
+}
+#star{
+    display:flex;
+    justify-content:flex-start;
+    gap:-140px;
+}
+#star>img{
+    height:30px;
+    margin-top:10px;
+}
+#star>p{
+    margin-bottom:-20px;
+    font-size: 18px;
+    margin-left:-90px;
+}
+#rating{
+height:35px;
+}
+#social>img{
+height:40px;
+margin-left: -15px;
+}
+#store{
+height:90px;
+margin-left:-10px;
+}
+#f1>p{
+margin-top:2px;
+line-height: 5px;
+}
+#f1{
+margin-left:-80px;
+}
+#f2{
+line-height:10px;
+margin-right:-80px;
+}
+p:hover{
+text-decoration:underline;
+cursor: pointer;
+}
+#f3{
+line-height: 10px;
+margin-right:-80px;
+}

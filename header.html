@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+/* ....................................down arrow */
+.down {
+transform: rotate(45deg);
+-webkit-transform: rotate(45deg);
+}
+.arrow {
+border: solid black;
+border-width: 0 3px 3px 0;
+display: inline-block;
+padding: 3px;
+}
+/*...................................... magnifier */
+#lowerHeader {
+
+width: 500px;
+height: 60px
+}
+
+/* The point of this tutorial is here */
+.form {
+display: flex;
+flex-direction: row;
+}
+.search-field {
+width: 1200px;
+padding: 10px 35px 10px 45px; 
+border: 1px solid black;
+outline: none;
+margin-right: -780px;
+}
+
+.search-button {
+background: transparent;
+border: none;
+outline: none;
+margin-left: -260px;
+}
+
+.search-button img {
+width: 20px;
+height: 20px;
+object-fit: cover;
+margin-left: -290px
+}
+
+#upperHeader{
+    display: flex;
+    justify-content: flex-end;
+    gap:20px;
+}
+#lowerHeader{
+    display:flex;
+    justify-content: space-around;
+    
+}
+#lowerHeader>div>p:nth-child(1){
+    font-weight: 950;
+    font-size:38px;
+    margin-top: 1px;
+}
+#lowerHeader>div{
+    display: flex;
+    gap:25px
+}
+/* .lh{
+    padding-left:80px; 
+} */
+    </style>
+</head>
+<body>
+    <div id="headerBody">
+        <div id="upperHeader">
+            <p>In-Us$</p>
+            <p>Help <i class="arrow down"></i></p>
+            <a href="login.html"><p>Sign in</p></a>
+        <a href="signup.html"><p>Join</p></a>
+        </div>
+        <div id="lowerHeader">
+            <div>
+            <p class="lh">LYST</p>
+            <p class="lh">WOMEN</p>
+            <p class="lh">MEN</p>
+            </div>
+            
+            <form action="/" method="GET" class="form">
+                <input type="search" placeholder="SEARCH (E.G. 'ACNE JEANS')" class="search-field" />
+                <button type="submit" class="search-button">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpabrqKMMTuZuYL3aIGA1xHJ0cfdY5xjY8Gg&usqp=CAU">
+        </div>
+
+    </div>
+</body>
+</html>

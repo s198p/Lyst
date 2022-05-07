@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/lyst/footer.css">
+    <link rel="stylesheet" href="/lyst/header.css">
+    <style>
+        #loginBody{
+            display:grid;
+            grid-template-columns: repeat(4,1fr);
+            padding-top: 20px;
+        }
+        #s1-1{
+            display:flex;
+            border:0.5px solid black;
+            
+        }
+        #s1-1>div:nth-child(2){
+            text-align: center;
+            padding-left: 30px;
+        }
+        #s1-1>div:nth-child(1){
+            background-color:black;
+            color:white;
+            width:50%;
+            text-align:center;
+        }
+        #s1-2>p:nth-child(1){
+            font-size:22px;
+            text-align:center;
+        }
+        #s1-2>p:nth-child(2){
+            font-size: 14px;
+            text-align: center;
+        }
+        .font15{
+            font-size: 15px;
+        }
+        #email{
+            width:90%;
+            height:30px;
+        }
+        #signupbtn{
+            background-color: black;
+            color:white;
+            width:95%;
+            height: 30px;
+            margin-top: 10px;
+        }
+        #or{
+            text-align: center;
+            font-size: 15px;
+        }
+        #s1-3{
+            display:flex;
+            justify-content:center;
+            background-color: #3d5c98;
+            color:white;
+        }
+        #s1-3>img{
+            height:21px;
+            margin-top:13px
+        }
+        #s1-4{
+            display:flex;
+            justify-content:center;
+            border:1px solid black;
+            margin-top:10px;
+        }
+        #s1-4>img{
+            height:23px;
+            margin-top: 12px;
+        }
+        #s2{
+            background-color: #bda7f9;
+            
+        }
+        #s2-1{
+            background-color:white;
+            width: 80%;
+            text-align: justify;
+            margin-left: 30px;
+            margin-top: 100px;
+        }
+        #s2-1>img{
+            height:22px;
+        }
+        #s2-1>p{
+            font-size: 18px;
+            text-align:center
+        }
+        #s2-1-1{
+            display:flex;
+            font-size: 14px;
+            justify-content:center;
+            
+        }
+        #s2-1-1>img{
+            height:20px;
+            margin-top: 13px;
+        }
+        #s2-1-2{
+            display:flex;
+            justify-content:center;
+        }
+        #s2-1-2>img{
+            height:20px;
+            margin-top: 14px;
+        }
+        #s2-1-3{
+            display:flex;
+            justify-content:center; 
+            padding-left: 42px;
+        }
+        #s2-1-3>img{
+            height:20px;
+            margin-top: 14px;
+        }
+    </style>
+</head>
+<body>
+    <!-------------------------------------------------------navbar---------------------------------------------------------------->
+ <div id="headerBody">
+    <div id="upperHeader">
+        <p>In-Us$</p>
+        <p>Help <i class="arrow down"></i></p>
+        <a href="login.html"><p>Sign in</p></a>
+        <a href="signup.html"><p>Join</p></a>
+    </div>
+    <div id="lowerHeader">
+        <div>
+        <p class="lh">LYST</p>
+        <a href="women.html"><p class="lh" onclick="women()">WOMEN</p></a>
+        <a href="mens.html"><p class="lh">MEN</p></a>
+        
+        </div>
+        
+        <form action="/" method="GET" class="form">
+            <input type="search" placeholder="SEARCH (E.G. 'ACNE JEANS')" class="search-field" />
+            <button type="submit" class="search-button">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpabrqKMMTuZuYL3aIGA1xHJ0cfdY5xjY8Gg&usqp=CAU">
+    </div>
+
+</div>
+    <!-------------------------------------------------------navbar---------------------------------------------------------------->
+    <div id="loginBody">
+        <div></div>
+        <div id="s1">
+            <div id="s1-1">
+                <div>
+                    <p>New to Lyst?</p>
+                </div>
+                <div>
+                    <p>Already a member</p>
+                </div>
+            </div>
+            <div id="s1-2">
+                <p><b>Sign in</b></p>
+            </div>
+            <form id="form">
+                <p class="font15">Email Address</p>
+                <input id="email" type="email" placeholder="Enter your Email Address">
+                <a href="index.html"><input id="signupbtn" type="button" value="Sign in"></a>
+                    
+            </form> 
+            
+            <p id="or">Or</p>
+            
+            <div>
+                <div id="s1-3">
+                    <img src="https://cdn3.iconfinder.com/data/icons/social-media-2169/24/social_media_social_media_logo_facebook-128.png"/>
+                    <p class="font15">Continue with Facebook</p>
+                </div>
+                <div id="s1-4">
+                    <img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-128.png"/>
+                    <p class="font15">Continue with Google</p>
+                </div>
+            </div>
+        </div>
+        <div id="s2">
+            <div id="s2-1">
+                <p><b>As a LYST member you can...</b></p>
+                <div id="s2-1-1">
+                    <img src="https://cdn1.iconfinder.com/data/icons/neutro-essential/32/bookmark-128.png"/>
+                    <p>Save your searches</p>
+                </div>
+                <div id="s2-1-2">
+                    <img src="https://cdn1.iconfinder.com/data/icons/neutro-essential/32/heart-128.png"/>
+                    <p>Create a wishlist</p>
+                </div>
+                <div id="s2-1-3">
+                    <img src="https://cdn1.iconfinder.com/data/icons/materia-music-vol-1/24/001_014_bell_ring_sound_alert-128.png"/>
+                    <p>Get alerts on your items</p>
+                </div>
+            </div>
+        </div>
+        <div></div>
+    </div>
+</body>
+</html>
